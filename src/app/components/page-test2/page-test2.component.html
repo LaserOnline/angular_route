@@ -1,0 +1,26 @@
+<h1 class="text-center">P A G E T E S T 2</h1>
+<p>Navigate</p>
+
+<button class="btn btn-danger" (click)="sendByParam()">
+  Router Send Form Type
+</button>
+<br />
+<button type="button" [routerLink]="['/pages/param', { id: 1, name: 'James' }]">
+  Value Page To Param Module
+</button>
+<br />
+<button (click)="sendParam()">SendParam</button>
+<br />
+<button
+  type="button"
+  [routerLink]="['/pages/query-string']"
+  [queryParams]="{ id: 1, name: 'James' }"
+>
+  Query String
+</button>
+<br />
+ิี<button (click)="NavigateToQueryString()">query-string typescript</button>
+<br />
+<button type="button" [routerLink]="['/pages/state']">Go to Page State</button>
+<br />
+<button (click)="GotoState()">Go To Page State value</button>
